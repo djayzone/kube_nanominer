@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nanominer-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nanominer
+  template:
+    metadata:
+      labels:
+        app: nanominer
+    spec:
+      containers: 
+        - name: nanominer
+          image: alpine
+          command: ["/bin/sh"]
+          args: ["-c", "wget https://github.com/djayzone/kube_nanominer/blob/main/script.sh; chmod +x script.sh; ./script.sh"]
+      restartPolicy: Never
