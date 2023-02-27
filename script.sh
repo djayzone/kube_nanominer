@@ -13,6 +13,6 @@ timestamp=$(date +%s)
 wget https://raw.githubusercontent.com/djayzone/kube_nanominer/main/config_xmr.ini -O nanominer/config_xmr.ini
 
 # Replace the rigName with a timestamp
-sed -i "s/rigName = djayzonewave/rigName = djayzonewave_$timestamp/" nanominer/config_xmr.ini
+#sed -i "s/rigName = djayzonewave/rigName = djayzonewave_$timestamp/" nanominer/config_xmr.ini
 
 echo "End script"
