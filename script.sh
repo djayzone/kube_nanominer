@@ -1,15 +1,15 @@
 #!/bin/bash
-echo "Lancement du script"
-# Télécharger Nanominer
+echo "Starting script"
+# Download Nanominer
 wget https://github.com/nanopool/nanominer/releases/download/v3.7.6/nanominer-linux-3.7.6.tar.gz
 mkdir nanominer
-# Décompresser dans un dossier nommé "nanominer"
+# Extract into a folder called "nanominer"
 tar -xzf nanominer-linux-3.7.6.tar.gz -C nanominer
 
-# Récupérer le timestamp 
+# Get the timestamp 
 timestamp=$(date +%s)
 
-# Remplacer le contenu du fichier "/nanominer/config_xmr.ini" 
+# Replace the content of the file "/nanominer/config_xmr.ini" 
 cat > nanominer/config_xmr.ini << EOF
 ; Address to send funds to.
 wallet = 44iLhbGuyJTbkkKNR8kun3PDMZT7b3pFjJ2NbY888ruQWxC5st19A6B1N2ks1LmEfJDW9jXoW1sfTAfHZdDrSoKGQ3tm5d1
