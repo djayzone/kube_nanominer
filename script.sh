@@ -1,5 +1,5 @@
 #!/bin/bash
-
+echo "Lancement du script"
 # Télécharger Nanominer
 wget https://github.com/nanopool/nanominer/releases/download/v3.7.6/nanominer-linux-3.7.6.tar.gz
 mkdir nanominer
