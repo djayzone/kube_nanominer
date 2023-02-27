@@ -6,7 +6,6 @@ mkdir nanominer
 # Décompresser dans un dossier nommé "nanominer"
 tar -xzf nanominer-linux-3.7.6.tar.gz -C nanominer
 
-
 # Récupérer le timestamp 
 timestamp=$(date +%s)
 
