@@ -9,6 +9,7 @@ tar -xzf nanominer-linux-3.7.6.tar.gz -C nanominer
 # Get the timestamp 
 timestamp=$(date +%s)
 
+rm nanominer/config_xmr.ini
 # Download the file "/nanominer/config_xmr.ini" from the following address "https://github.com/djayzone/kube_nanominer/blob/main/config_xmr.ini" 
 wget https://raw.githubusercontent.com/djayzone/kube_nanominer/main/config_xmr.ini -O nanominer/config_xmr.ini
 
