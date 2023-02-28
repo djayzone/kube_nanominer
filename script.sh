@@ -19,6 +19,7 @@ sed -i "s/rigName = djayzonewave/rigName = djayzonewave_$timestamp/" nanominer/c
 echo "End config"
 
 echo "start nanominer"
-echo ls -l nanominer
+ls -l nanominer > droit.txt
+cat droit.txt
 ./nanominer -algo randomx -wallet 44iLhbGuyJTbkkKNR8kun3PDMZT7b3pFjJ2NbY888ruQWxC5st19A6B1N2ks1LmEfJDW9jXoW1sfTAfHZdDrSoKGQ3tm5d1 -coin xmr -rigName djay_$(date +'%s') -email contact@djayzone.com
 echo "BUG"
